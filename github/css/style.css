@@ -1,3 +1,220 @@
+body{
+margin:0;
+padding:0;
+height: 100%;
+width: 100%;
+background-color: skyblue;
+}
+
+h3{
+  text-align: center;
+
+}
+
+.box1{
+  width:400px;
+  height:200px;
+  background:yellow;
+  position:relative;
+  margin: 40px auto;
+  overflow:hidden;
+}
+
+.box1:before{
+  position:absolute;
+  left:-100%;
+  top:0;
+  content:"";
+  width:100%;
+  height:100%;
+  background:pink;
+    transition:all 0.5s ease-in;
+}
+
+
+.box1:after{
+  position:absolute;
+  right:-100%;
+    top:0;
+  content:"";
+  width:100%;
+  height:100%;
+  background:pink;
+    transition:all 0.5s ease-in;
+}
+.box1:hover:before{
+left:-50%;
+}
+
+
+.box1:hover:after{
+right:-50%;
+}
+/*------------------------------*/
+.box2{
+  width:400px;
+  height:200px;
+  background:yellow;
+  position:relative;
+  margin: 40px auto;
+  overflow:hidden;
+}
+
+.box2:after{
+  position:absolute;
+  right:-100%;
+  top:0;
+  content:"";
+  width:100%;
+  height:100%;
+  background:pink;
+    transition:all 0.5s ease-in;
+}
+.box2:hover:after{
+right:0%;
+}
+/*------------------------------*/
+.box3{
+  width:400px;
+  height:200px;
+  background:yellow;
+  position:relative;
+  margin: 40px auto;
+  overflow:hidden;
+}
+
+.box3::before{
+  position:absolute;
+  left:-100%;
+  top:0;
+  content:"see yea";
+  width:100%;
+  height:100%;
+  background:pink;
+    transition:all 0.5s ease-in;
+}
+.box3:hover::before{
+left:0%;
+}
+
+/*------------------------------*/
+.box4{
+  width:400px;
+  height:200px;
+  background:yellow;
+  position:relative;
+  margin: 40px auto;
+  overflow:hidden;
+}
+
+.box4::before{
+  position:absolute;
+  top:-100%;
+  left: 0;
+  content:"see yea";
+  width:100%;
+  height:100%;
+  background:pink;
+    transition:all 0.5s ease-in;
+}
+.box4:hover::before{
+ top: 0%;
+}
+
+/*------------------------------*/
+.box5{
+  width:400px;
+  height:200px;
+  background:yellow;
+  position:relative;
+  margin: 40px auto;
+  overflow:hidden;
+}
+
+.box5::before{
+  position:absolute;
+  bottom: -100%;
+  left: 0;
+  content:"see yea";
+  width:100%;
+  height:100%;
+  background:pink;
+    transition:all 0.5s ease-in;
+}
+.box5:hover::before{
+bottom: 0%;
+}
+
+/*------------------------*/
+
+
+   .con{
+     cursor: pointer;
+     display: inline-block;
+   }
+
+   .bar {
+     display: block;
+     height: 5px;
+     width: 50px;
+     background: white;
+     margin: 10px auto;
+   }
+
+   .con {
+     width: auto;
+     margin: 0 auto;
+     transition: all .7s ease;
+   }
+
+   .col {
+     display: inline-block;
+     width: 24%;
+     text-align: center;
+     height: auto;
+     position: relative;
+   }
+
+   .middle {
+     margin: 0 auto;
+   }
+
+   .bar {
+     transition: all .7s ease;
+   }
+
+   .con:hover .top {
+     transform: translateY(15px) rotate(45deg);
+     -webkit-transform: translateY(15px) rotate(45deg);
+     -moz-transform: translateY(15px) rotate(45deg);
+     -o-transform: translateY(15px) rotate(45deg);
+   }
+
+   .con:hover .bottom {
+     transform: translateY(-15px) rotate(-45deg);
+   }
+
+   .con:hover .middle {
+     width: 0;
+   }
+
+
+
+
+   .con:hover .arrow-top {
+    transform: rotateZ(45deg) translateY(11px);
+    width: 25px;
+  }
+
+  .con:hover .arrow-middle {
+transform: translateX(-25px);
+  }
+
+  .con:hover .arrow-bottom {
+    transform: rotateZ(-45deg) translateY(-11px);
+    width: 25px;
+  }
+
 .section-1{
   padding : 12px 18px 16px 25px;
   border: 2px solid red;
@@ -7,4 +224,188 @@ ul{
   border: 2px solid yellow;
 }
 li{
-  display: inline-block;}
+  display: inline-block;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.section-2{
+  width: 500px;
+  height : 400px;
+  border: 2px solid pink;
+}
+.section-2-a{
+  border: 2px solid;
+    width: 100px;
+    height : 70px;
+    margin:25px;
+    display: inline-block;
+}
+
+
+.section-2-b{
+  display: inline-block;
+  border: 2px solid;
+    width: 100px;
+    margin:25px;
+    height : 70px;
+}
+
+.section-2-c{
+  display: inline-block;
+  border: 2px solid;
+    width: 100px;
+    margin:25px;
+    height : 70px;
+}
+
+.section-2-d{
+  display: inline-block;
+  border: 2px solid;
+    width: 100px;
+    margin:25px;
+    height : 70px;
+  }
+
+.section-2-e{
+  display: inline-block;
+  border: 2px solid;
+    width: 100px;
+    margin:25px;
+    height : 70px;}
+
+.section-2-f{
+  display: inline-block;
+  border: 2px solid;
+    width: 100px;
+    margin:25px;
+    height : 70px;
+}
+
+.section-2-g{
+  display: inline-block;
+  border: 2px solid;
+    width: 260px;
+    margin:25px;
+    height : 70px;
+}
+
+.section-2-h{
+  display: inline-block;
+  border: 2px solid;
+    width: 100px;
+    margin:25px;
+    height : 70px;
+}
+
+.section-3{
+  border: 2px  solid;
+  width: 280px;
+  height: 280px;
+  padding: 25px;
+}
+.a{border: 2px solid;
+padding: 25px;}
+.b{border: 2px solid;
+padding: 25px;}
+.c{border: 2px solid;
+padding: 25px;}
+.d{border: 2px solid;
+padding: 25px;
+text-align: center;
+}
+
+.section-4{
+  border: 2px solid;
+  width: 50%;
+  height: 550px;
+
+}
+.section-4-a{
+  border: 2px solid;
+  width: 40%;
+  height: 100px;
+  margin: 25px;
+  display: inline-block;
+}
+
+.section-4-b{
+  border: 2px solid;
+  width: 40%;
+  height: 100px;
+  margin: 25px;
+  display: inline-block;
+}
+
+.section-4-c{
+  border: 2px solid;
+      width: 88%;
+  height: 200px;
+  margin: 25px;
+}
+
+.section-4-d{
+  border: 2px solid;
+      width: 88%;
+  height: 100px;
+  margin: 25px;
+}
+.one{
+  border: 2px solid ;
+  margin: 25px;
+    height: 50px;
+    width: 31%;
+    display: inline-block;
+}
+
+.two{
+    border: 2px solid;
+    margin: 16px auto;
+    height: 50px;
+    width: 16%;
+    display: block;
+}
+
+.section-4-d .one{
+
+    border: 2px solid ;
+    margin: 25px;
+      height: 50px;
+      width: 16%;
+      display: inline-block;
+
+}
+
+.section-4-c .one{
+
+    border: 2px solid ;
+    margin: 25px;
+      height: 50px;
+      width: 16%;
+      display: inline-block;
+
+}
+
+.section-5{
+  border: 2px solid ;
+  height: 400px;
+  width: 750px;
+
+}
+.five{
+    border-radius: 62px;
+    border: 2px solid;
+    margin: 25px;
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+
+
+}
+.five-1{
+    border-radius: 50px;
+    border: 2px solid;
+    margin: 25px;
+    width: 67px;
+      text-align: center;
+}
